@@ -24,6 +24,7 @@ urlpatterns = [
     path('', views.home),
     path('cliente/', include('cliente.urls')),
     path('api/', include('apiBanco.urls')),
-    path('solicitud/', include('manejadorSolicitudes.urls')),
-    path('ofertas/', include('manejadorOfertas.urls'))
+    path(r'', include('django.contrib.auth.urls')),
+    path(r'', include('social_django.urls')),
+    
 ]
